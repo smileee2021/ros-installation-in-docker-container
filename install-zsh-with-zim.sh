@@ -2,7 +2,7 @@
 
 # install necessary package
 apt update
-apt install curl zsh
+apt install curl zsh git
 
 # install zsh with zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
