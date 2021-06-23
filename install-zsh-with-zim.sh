@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # install necessary package
 apt update
@@ -7,8 +7,7 @@ apt install curl zsh
 # install zsh with zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 sed -i 's/asciiship/eriner/g' ~/.zimrc
-zimfw install
+sed -i 's/set -e//g' /ros_entrypoint.sh
 
-# exit
-echo 'Please exec container terminal with zsh again, and then type the following instruction:\n\n\e[0;36msource /opt/ros/foxy/setup.bash\nsource ros_entrypoint.sh\e[0m'
-exit
+echo 'Please type the following instruction:\n\n\e[0;36mzimfw install\nsource /ros_entrypoint.sh\e[0m'
+zsh
