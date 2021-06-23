@@ -10,22 +10,20 @@ you will install some package or get some settings through this shell script:
   - wget
 - shell
   - zsh with zim
+- version control
+  - git
 
 # Usage
-## with ROS1 Container
-- enter into terminal with ROS container
-
-## with ROS2 Container
-1. new or enter terminal with ROS2 container
+1. new or enter terminal with ROS1 or ROS2 container
 ```bash
-# new
+# Container doesn't exist
 docker run -it --name=<ContainerName> <ROSImageName>
 
-# enter
+# Cointainer exists
 docker exec -it <ContainerName> bash
 ```
 
-2. install curl if you don't have it. If you've already installed it, you can still execute `apt update`
+2. install curl if you don't have it.
 ```bash
 apt update; apt install curl
 ```
