@@ -12,10 +12,10 @@ you will install some package or get some settings through this shell script:
   - zsh with zim
 
 # Usage
-## ROS Container
+## with ROS1 Container
 - enter into terminal with ROS container
 
-## ROS2 Container
+## with ROS2 Container
 1. new or enter terminal with ROS2 container
 ```bash
 # new
@@ -42,4 +42,4 @@ source /ros_entrypoint.sh
 zsh
 ```
 
-now, you can type `roscore`(ROS1) or `ros2` in terminal and use ROS!
+now, you can type `roscore` (ROS1) or `ros2` in terminal and use ROS!
