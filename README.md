@@ -1,1 +1,43 @@
 # ros-installation-in-docker-container
+
+A shell script that package installation about ROS(Robot Operating System), ROS2 in Docker container.
+
+When we setup a new ROS container, it is so clear so that we must install a lot of package, so I write a shell script to Get rid of things that are troublesome.
+
+you will install some package or get some settings through this shell script:
+- package
+  - curl
+  - wget
+- shell
+  - zsh with zim
+
+# Usage
+## ROS Container
+- enter into terminal with ROS container
+
+## ROS2 Container
+1. new or enter terminal with ROS2 container
+```bash
+# new
+docker run -it --name=<ContainerName> <ROSImageName>
+
+# enter
+docker exec -it <ContainerName> bash
+```
+
+2. install curl if you don't have it. If you've already installed it, you can still execute `apt update`
+```bash
+apt update; apt install curl
+```
+
+3. execute shell script
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/smileee2021/ros-installation-in-docker-container/main/install-zsh-with-zim.sh)"
+```
+
+4. finally
+```bash
+zimfw install
+source /ros_entrypoint.sh
+zsh
+```
