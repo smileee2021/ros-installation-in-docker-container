@@ -14,7 +14,7 @@ you will install some package or get some settings through this shell script:
 
 # Usage
 1. new or enter terminal with ROS1 or ROS2 container
-    ```bash
+    ```shell
     # If Container doesn't exist
     docker run -it --name=<ContainerName> <ROSImageName>
 
@@ -23,17 +23,17 @@ you will install some package or get some settings through this shell script:
     ```
 
 2. install curl if you don't have it.
-    ```bash
+    ```shell
     apt update; apt install curl
     ```
 
 3. execute shell script
-    ```bash
+    ```shell
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/smileee2021/ros-installation-in-docker-container/main/install-zsh-with-zim.sh)"
     ```
 
 4. finally
-    ```bash
+    ```shell
     zimfw install
     source /ros_entrypoint.sh
     zsh
