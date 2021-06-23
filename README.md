@@ -15,10 +15,10 @@ you will install some package or get some settings through this shell script:
 # Usage
 1. new or enter terminal with ROS1 or ROS2 container
     ```bash
-    # Container doesn't exist
+    # If Container doesn't exist
     docker run -it --name=<ContainerName> <ROSImageName>
 
-    # Cointainer exists
+    # If Cointainer exists
     docker exec -it <ContainerName> bash
     ```
 
