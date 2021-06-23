@@ -7,7 +7,6 @@ When we setup a new ROS container, it is so clear so that we must install a lot 
 you will install some package or get some settings through this shell script:
 - package
   - curl
-  - wget
 - shell
   - zsh with zim
 - version control
